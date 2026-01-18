@@ -1,0 +1,89 @@
+.main {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.432);
+  backdrop-filter: blur(12px);
+  width: calc(100% - 700px);
+  height: 100vh;
+  /*top: calc(100vh - 0px);*/
+  top: 60px;
+  z-index: 100;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  box-shadow: 0 10px 30px rgba(76, 76, 76, 0.3);
+  transition: top 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-onclick {
+  top: 60px;
+}
+.main-welcome-p {
+  font-size: 40px;
+  margin-top: 100px;
+  font-weight: 500;
+}
+.main-welcome-des-p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+.main-welcome-2nd-des-p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.user-pass-main-div {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.user-pass-div {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.592);
+  width: 400px;
+  height: 40px;
+  border: solid rgb(181, 181, 181) 2px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.user-pass-inp {
+  flex: 1;
+  height: 100%;
+  text-indent: 15px;
+  background: none;
+}
+.user-div:has(input:focus) {
+  background-color: rgb(255, 255, 255);
+}
+.pass-div:has(input:focus) {
+  background-color: rgb(255, 255, 255);
+}
+.eye {
+  height: 25px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.Sigin-2nd-btn {
+  background: linear-gradient(45deg, rgb(255, 165, 165), rgb(226, 154, 255));
+  width: 400px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 100px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 0 0 5px rgb(186, 109, 109);
+}
+.Sigin-2nd-btn:hover {
+  opacity: 0.8;
+}
+.Sigin-2nd-btn:active {
+  background-color: white;
+  opacity: 0.6;
+  margin-top: 102px;
+  margin-left: 2px;
+  margin-bottom: -2px;
+}

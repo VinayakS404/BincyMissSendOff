@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/loginPage.css" />
+    <link rel="stylesheet" href="./css/loginPage-main.css" />
   </head>
   <body>
     <p class="welcome-p">WELCOME</p>
@@ -19,11 +20,21 @@
       <p class="main-welcome-des-p">
         Are you ready to relive the cherished memories with us?
       </p>
-      <input type="text" placeholder="Enter username" class="username-inp" />
-      <div class="pass-div">
-        <input type="password" placeholder="Pasword" class="password-inp" />
+      <p class="main-welcome-2nd-des-p">Your path is here!</p>
+      <div class="user-pass-main-div">
+        <div class="user-pass-div user-div">
+          <input
+            type="text"
+            placeholder="Enter username"
+            class="user-pass-inp"
+          />
+        </div>
+        <div class="user-pass-div pass-div">
+          <input type="password" placeholder="Pasword" class="user-pass-inp" />
+          <img src="./imges/hide.png" class="eye" />
+        </div>
       </div>
-      <a href="home.html"><button class="Sigin-2nd-btn">Log In</button> </a>
+      <a href="./home.html"><button class="Sigin-2nd-btn">Log In</button> </a>
     </div>
     <script src="./js/loginPage.js"></script>
   </body>

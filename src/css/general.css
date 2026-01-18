@@ -9,3 +9,8 @@ body {
     system-ui,
     -apple-system;
 }
+input {
+  outline: none;
+  border: none;
+  border: none;
+}
