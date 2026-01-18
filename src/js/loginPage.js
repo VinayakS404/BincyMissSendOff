@@ -2,9 +2,9 @@ const eyeElement = document.querySelector(".eye-js");
 const siginElement = document.querySelector(".Sigin-1st-btn-js");
 const mainElement = document.querySelector(".main-js");
 const backElement = document.querySelector(".back-img-js");
-const back2ndElement = document.querySelector(".js-back-2nd-img");
+const back2ndElement = document.querySelector(".back-2nd-img-js");
 const forgotElement = document.querySelector(".forgot-p-js");
-const passwordElement = document.querySelector(".user-pass-inp-js");
+export const passwordElement = document.querySelector(".pass-inp-js");
 
 siginElement.addEventListener("click", () => {
   mainElement.classList.remove("main-2nd-onclick");
