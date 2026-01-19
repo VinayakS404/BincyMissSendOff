@@ -1,0 +1,23 @@
+.rating-relative-div {
+  position: relative;
+  transition: margin-bottom 0.8s ease-in-out;
+}
+.rating-div {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 200px;
+  z-index: 1;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rebeccapurple;
+  transition: bottom 0.8s ease-in-out;
+}
+.rating-div-active {
+  bottom: -150px;
+}
+.rating-relative-div-active {
+  margin-bottom: 120px;
+}
