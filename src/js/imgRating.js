@@ -11,7 +11,12 @@ imgElement.forEach((img) => {
   if (!ratingDiv) return;
 
   img.addEventListener("click", () => {
-    ratingDiv.classList.add("rating-div-active");
-    parent.classList.add("rating-relative-div-active");
+    if (ratingDiv.classList.contains("rating-div-active")) {
+      ratingDiv.classList.remove("rating-div-active");
+      parent.classList.remove("rating-relative-div-active");
+    } else {
+      ratingDiv.classList.add("rating-div-active");
+      parent.classList.add("rating-relative-div-active");
+    }
   });
 });
