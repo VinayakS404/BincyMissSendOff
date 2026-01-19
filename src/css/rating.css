@@ -12,12 +12,15 @@
   z-index: 1;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-color: rebeccapurple;
+  background-color: rgb(222, 222, 222);
   transition: bottom 0.8s ease-in-out;
 }
 .rating-div-active {
-  bottom: -150px;
+  bottom: -140px;
 }
 .rating-relative-div-active {
   margin-bottom: 120px;
+}
+#emoji {
+  margin-top: 100px;
 }
