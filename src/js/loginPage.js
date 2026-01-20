@@ -30,9 +30,9 @@ eyeElement.addEventListener("click", () => {
   console.log("hi");
   if (passwordElement.type === "password") {
     passwordElement.type = "text";
-    eyeElement.src = "../assets/imges/Hide.png";
+    eyeElement.src = "../assets/images/Hide.png";
   } else if (passwordElement.type === "text") {
     passwordElement.type = "password";
-    eyeElement.src = "../assets/imges/notHide.png";
+    eyeElement.src = "../assets/images/notHide.png";
   }
 });
