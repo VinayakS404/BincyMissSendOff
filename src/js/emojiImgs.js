@@ -1,36 +1,39 @@
-const inLoveElement = document.querySelectorAll(".in-love-img");
-const CryElement = document.querySelectorAll(".cry-img");
-const laughElement = document.querySelectorAll(".laugh-img");
-const niceElement = document.querySelectorAll(".nice-img");
-const sweatElement = document.querySelectorAll(".sweat-img");
-const EmojiDivElement = document.querySelectorAll(".emoji-div");
 import { popaudio } from "./util.js";
 
+const EmojiDivElement = document.querySelectorAll(".emoji-div");
+
 EmojiDivElement.forEach((emojiDiv) => {
-  emojiDiv.addEventListener("click", () => {
-    const EmojiElement = emojiDiv.querySelector(".in-love-img");
-    EmojiElement.src = "../assets/images/in-love.gif";
-    EmojiElement.classList.add("emoji-img-active");
-    popaudio();
-  });
-  emojiDiv.addEventListener("click", () => {
-    const EmojiElement = emojiDiv.querySelector(".cry-img");
-    EmojiElement.src = "../assets/images/cry.gif";
-    popaudio();
-  });
-  emojiDiv.addEventListener("click", () => {
-    const EmojiElement = emojiDiv.querySelector(".laugh-img");
-    EmojiElement.src = "../assets/images/laugh.gif";
-    popaudio();
-  });
-  emojiDiv.addEventListener("click", () => {
-    const EmojiElement = emojiDiv.querySelector(".nice-img");
-    EmojiElement.src = "../assets/images/nice.gif";
-    popaudio();
-  });
-  emojiDiv.addEventListener("click", () => {
-    const EmojiElement = emojiDiv.querySelector(".sweat-img");
-    EmojiElement.src = "../assets/images/sweat.gif";
+  emojiDiv.addEventListener("click", (e) => {
+    const img = emojiDiv.querySelector("img");
+    if (!img) return;
+
+    const imgGifName = {
+      "in-love-img": "in-love",
+      "cry-img": "cry",
+      "laugh-img": "laugh",
+      "nice-img": "nice",
+      "sweat-img": "sweat",
+    };
+
+    let baseName;
+
+    for (const cls in imgGifName) {
+      if (img.classList.contains(cls)) {
+        baseName = imgGifName[cls];
+        break;
+      }
+    }
+
+    if (!baseName) return;
+
+    const isGif = img.src.includes(".gif");
+
+    if (isGif) {
+      img.src = `../assets/images/${baseName}.png`;
+    } else {
+      img.src = `../assets/images/${baseName}.gif`;
+    }
+
     popaudio();
   });
 });
