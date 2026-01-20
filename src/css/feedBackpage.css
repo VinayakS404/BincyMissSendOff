@@ -1,0 +1,113 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-div {
+  width: 100%;
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+}
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 900px;
+  background-color: rgb(203, 206, 192);
+}
+
+.msg-div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.message {
+  padding-top: 5px;
+  padding-bottom: 3px;
+  border-radius: 10px;
+  position: relative;
+  word-wrap: break-word;
+  font-size: 20px;
+  min-width: 10px;
+  max-width: 600px;
+  font-size: 17px;
+  color: black;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: appearo linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+/* Bubble for sender */
+.message.sender {
+  align-self: flex-end;
+  border-top-right-radius: 0px;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #b3ffc5;
+}
+
+/* Bubble for receiver */
+.message.receiver {
+  align-self: flex-start;
+  border-top-left-radius: 0;
+  margin-left: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Optional: small triangle pointer */
+.message.sender::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: -2.5px;
+  border-width: 5px 0 10px 20px;
+  transform: rotate(-12deg);
+  border-style: solid;
+  border-color: transparent transparent transparent #b3ffc5;
+}
+
+.message.receiver::after {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: -2.5px;
+  border-width: 5px 20px 10px 0px;
+  transform: rotate(12deg);
+  border-style: solid;
+  border-color: transparent #ffffff transparent transparent;
+}
+.profile-img {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.sender-msg-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: start;
+}
+.receiver-msg-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: start;
+}
+.message-name {
+  text-align: start;
+  color: rgb(255, 0, 0);
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.message-time {
+  text-align: end;
+  font-size: 13px;
+  color: rgb(82, 82, 82);
+  margin-top: -1px;
+}
