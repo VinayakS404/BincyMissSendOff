@@ -8,6 +8,7 @@ body {
     ui-sans-serif,
     system-ui,
     -apple-system;
+  overflow-x: hidden;
 }
 input {
   outline: none;
