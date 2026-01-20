@@ -1,6 +1,7 @@
 //.rating-div
 //.photo-img
 //photo-2nd
+//.emoji-img
 const imgElement = document.querySelectorAll(".photo-img");
 const Photo2ndElement = document.querySelectorAll(".photo-2nd");
 

@@ -10,11 +10,17 @@
     <link rel="stylesheet" href="./css/page2.css" />
     <link rel="stylesheet" href="./css/rating.css" />
     <link rel="stylesheet" href="./css/emojionearea.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/emojionearea.js"></script>
   </head>
   <body>
     <div class="main">
       <div class="first-div xdiv">
-        <img src="./imges/heart.png" class="heart-img" />
+        <img src="../assets/imges/heart.png" class="heart-img" />
         <p class="thanks-1st-p">Thank You</p>
         <p class="name-1st-p">Mrs. Bincy K Sunny</p>
         <p class="beloved-1st-p">Our Beloved Class Teacher</p>
@@ -24,12 +30,12 @@
           beyond textbooks, and your impact will last a
           <span style="font-weight: 500">lifetime</span>.
         </p>
-        <img src="./imges/mouse.png" class="mouse" />
+        <img src="../assets/imges/mouse.png" class="mouse" />
         <p class="scroll-1st-p">Sroll down</p>
       </div>
       <div class="second-div">
         <div class="content-2nd">
-          <img src="./imges/cute-camera.gif" class="camera" />
+          <img src="../assets/imges/cute-camera.gif" class="camera" />
           <p class="Memories-2nd-p">Memories We Cherish</p>
           <p class="des-2nd-p">
             Every moment with you was precious. These photos capture just a
@@ -39,38 +45,202 @@
         <div class="photo-2nd">
           <div class="rating-relative-div">
             <div class="ppo">
-              <img src="./imges/images.jpg" alt="" class="photo-img" />
+              <img src="../assets/imges/images.jpg" alt="" class="photo-img" />
+              <p class="emoji-des">Loved it / Enjoyed</p>
             </div>
             <div class="rating-div">
-              <textarea name="" id="emoji"></textarea>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/in-love-.png"
+                  class="in-love-img emoji-img"
+                />
+                <p class="emoji-des">Emotional moment</p>
+              </div>
+              <div class="emoji-div">
+                <img src="../assets/imges/cry.png" class="cry-img emoji-img" />
+                <p class="emoji-des">Funny / Haha</p>
+              </div>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/laugh.png"
+                  class="laugh-img emoji-img"
+                />
+                <p class="emoji-des">Nice</p>
+              </div>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/nice.png"
+                  class="nice-img emoji-img"
+                />
+                <p class="emoji-des">Funny / Haha</p>
+              </div>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/sweat.png"
+                  class="sweat-img emoji-img"
+                />
+                <p class="emoji-des">Hard to remember</p>
+              </div>
             </div>
           </div>
 
           <div class="rating-relative-div">
             <div class="ppe">
-              <img src="./imges/images.jpg" alt="" class="photo-img" />
+              <img src="../assets/imges/images.jpg" alt="" class="photo-img" />
             </div>
-            <div class="rating-div"></div>
+            <div class="rating-div">
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/in-love-.png"
+                  class="in-love-img emoji-img"
+                />
+                <p class="emoji-des">Emotional moment</p>
+              </div>
+              <div class="emoji-div">
+                <img src="../assets/imges/cry.png" class="cry-img emoji-img" />
+                <p class="emoji-des">Funny / Haha</p>
+              </div>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/laugh.png"
+                  class="laugh-img emoji-img"
+                />
+                <p class="emoji-des">Nice</p>
+              </div>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/nice.png"
+                  class="nice-img emoji-img"
+                />
+                <p class="emoji-des">Funny / Haha</p>
+              </div>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/sweat.png"
+                  class="sweat-img emoji-img"
+                />
+                <p class="emoji-des">Hard to remember</p>
+              </div>
+            </div>
           </div>
 
           <div class="rating-relative-div">
             <div class="ppo">
-              <img src="./imges/images.jpg" alt="" class="photo-img" />
+              <img src="../assets/imges/images.jpg" alt="" class="photo-img" />
             </div>
-            <div class="rating-div"></div>
+            <div class="rating-div">
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/in-love-.png"
+                  class="in-love-img emoji-img"
+                />
+                <p class="emoji-des">Emotional moment</p>
+              </div>
+              <div class="emoji-div">
+                <img src="../assets/imges/cry.png" class="cry-img emoji-img" />
+                <p class="emoji-des">Funny / Haha</p>
+              </div>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/laugh.png"
+                  class="laugh-img emoji-img"
+                />
+                <p class="emoji-des">Nice</p>
+              </div>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/nice.png"
+                  class="nice-img emoji-img"
+                />
+                <p class="emoji-des">Funny / Haha</p>
+              </div>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/sweat.png"
+                  class="sweat-img emoji-img"
+                />
+                <p class="emoji-des">Hard to remember</p>
+              </div>
+            </div>
           </div>
           <div class="rating-relative-div">
             <div class="ppe">
-              <img src="./imges/images.jpg" alt="" class="photo-img" />
+              <img src="../assets/imges/images.jpg" alt="" class="photo-img" />
             </div>
-            <div class="rating-div"></div>
+            <div class="rating-div">
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/in-love-.png"
+                  class="in-love-img emoji-img"
+                />
+                <p class="emoji-des">Emotional moment</p>
+              </div>
+              <div class="emoji-div">
+                <img src="../assets/imges/cry.png" class="cry-img emoji-img" />
+                <p class="emoji-des">Funny / Haha</p>
+              </div>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/laugh.png"
+                  class="laugh-img emoji-img"
+                />
+                <p class="emoji-des">Nice</p>
+              </div>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/nice.png"
+                  class="nice-img emoji-img"
+                />
+                <p class="emoji-des">Funny / Haha</p>
+              </div>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/sweat.png"
+                  class="sweat-img emoji-img"
+                />
+                <p class="emoji-des">Hard to remember</p>
+              </div>
+            </div>
           </div>
 
           <div class="rating-relative-div">
             <div class="ppo">
-              <img src="./imges/images.jpg" alt="" class="photo-img" />
+              <img src="../assets/imges/images.jpg" alt="" class="photo-img" />
             </div>
-            <div class="rating-div"></div>
+            <div class="rating-div">
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/in-love-.png"
+                  class="in-love-img emoji-img"
+                />
+                <p class="emoji-des">Emotional moment</p>
+              </div>
+              <div class="emoji-div">
+                <img src="../assets/imges/cry.png" class="cry-img emoji-img" />
+                <p class="emoji-des">Funny / Haha</p>
+              </div>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/laugh.png"
+                  class="laugh-img emoji-img"
+                />
+                <p class="emoji-des">Nice</p>
+              </div>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/nice.png"
+                  class="nice-img emoji-img"
+                />
+                <p class="emoji-des">Funny / Haha</p>
+              </div>
+              <div class="emoji-div">
+                <img
+                  src="../assets/imges/sweat.png"
+                  class="sweat-img emoji-img"
+                />
+                <p class="emoji-des">Hard to remember</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -79,11 +249,7 @@
       <div class="fifth-div xdiv"></div>
     </div>
     <script src="./js/imgRating.js"></script>
-    <script src="./js/emojionearea.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
+    <script src="./js/emojis.js"></script>
+    <script type="module" src="./js/emojiImgs.js"></script>
   </body>
 </html>
