@@ -1,3 +1,6 @@
+body {
+  position: relative;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -159,22 +162,45 @@
   left: 50%;
   transform: translateX(-50%);
   transition:
-    transform 0.2s ease,
-    top 0.2s ease;
+    transform 1s ease,
+    top 1s ease;
 }
 
 .plane-btn:hover .plane-img {
   transform: translateX(-60%);
   top: 10px;
 }
-.plane-btn:active .plane-img {
-  transform: translateX(300%);
-  top: -300px;
+
+.plane-active {
+  transform: translateX(1060%);
+  top: -1010px;
 }
+
 .x1-p {
   margin-top: 80px;
 }
 .x2-p {
   margin-top: 30px;
   margin-bottom: 80px;
+}
+.black {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 3s;
+  pointer-events: none; /* disables clicks when invisible */
+}
+.black-active {
+  opacity: 1;
+  pointer-events: auto; /* enable clicks when visible */
+}
+.emoji-text {
+  opacity: 1;
+}
+.emoji-text-active {
+  opacity: 0;
 }

@@ -65,3 +65,22 @@ function submitMessage() {
   input.value = "";
   console.log("Current Messages:", messages);
 }
+
+const btnElement = document.querySelector(".plane-btn-js");
+const planeElement = document.querySelector(".plane-img-js");
+const blackElement = document.querySelector(".black");
+btnElement.addEventListener("click", () => {
+  planeElement.classList.add("plane-active");
+
+  const emojiBtn = document.querySelector(".emojionearea-button");
+  if (emojiBtn) {
+    emojiBtn.style.display = "none";
+  }
+
+  setTimeout(() => {
+    blackElement.classList.add("black-active");
+    input.classList.add("emoji-text-active");
+
+    submitMessage();
+  }, 4000);
+});
