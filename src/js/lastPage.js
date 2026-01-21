@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const storedData = localStorage.getItem("messages") || "[]";
   const messagesArray = JSON.parse(storedData);
+  console.log("Current Messages:", messagesArray);
   let lastMessage =
     messagesArray.length > 0
       ? messagesArray.at(-1)

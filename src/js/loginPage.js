@@ -21,9 +21,7 @@ back2ndElement.addEventListener("click", () => {
 });
 
 forgotElement.addEventListener("click", () => {
-  alert(
-    "Password Hint\nYour full name + total number of students in bca s4\n(No spaces!)",
-  );
+  alert("Password Hint\nYour full name + Current year\n(No spaces!)");
 });
 
 eyeElement.addEventListener("click", () => {
