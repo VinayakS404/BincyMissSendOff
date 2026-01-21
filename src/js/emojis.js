@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  $(".emoji").emojioneArea({
+  $("#messageInput").emojioneArea({
     pickerPosition: "top",
     tonesStyle: "bullet",
     autocomplete: true,

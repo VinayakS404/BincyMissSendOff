@@ -4,23 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/emojionearea.js"></script>
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/videoNMsgPage.css" />
+    <style>
+      #messages {
+        max-width: 500px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-family: Arial, sans-serif;
+      }
+
+      .message-bubble {
+        background-color: #f0c27b;
+        padding: 10px 15px;
+        border-radius: 15px;
+        max-width: 80%;
+        word-wrap: break-word;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeInUp 0.5s forwards;
+      }
+
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="first-div xdiv">
-      <img src="../assets/images/heart.png" class="heart-img" />
+    <div class="first-div x-div">
+      <img src="../assets/images/video.png" class="heart-img" />
       <p class="name-1st-p">Memories Recap</p>
       <p class="des-1st-p">
         A small collection of moments, lessons, and memories we shared
         together..
       </p>
-      <div class="vidio-div x-div"></div>
+      <div class="vidio-div x-div">
+        <p class="click-p click-p-js">click to start the video</p>
+        <video
+          src="../assets/59126.mp4"
+          class="vidio-vid vidio-vid-js"
+          loop
+          muted
+        ></video>
+      </div>
       <div class="review-div x-div">
-        <textarea class=".emoji"></textarea>
+        <textarea class="emoji" id="messageInput"></textarea>
         <button class="hi">dasa</button>
+        <div id="messages"></div>
+
+        <button onclick="submitMessage()">Send</button>
       </div>
     </div>
+    <script>
+      function submitMessage() {
+        const input = document.getElementById("messageInput");
+        const message = input.value.trim();
+        if (!message) return;
+        input.value = "";
+
+        const messageDiv = document.createElement("div");
+        document.getElementById("messages").appendChild(messageDiv);
+
+        let i = 0;
+        function type() {
+          if (i < message.length) {
+            messageDiv.textContent += message[i];
+            i++;
+            setTimeout(type, 50); // typing speed
+          }
+        }
+        type();
+      }
+    </script>
+    <script src="./js/videoNMsgPage.js"></script>
     <script src="./js/emojis.js"></script>
   </body>
 </html>
