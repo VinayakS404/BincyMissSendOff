@@ -37,6 +37,13 @@ body {
   animation: appearo linear;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
+  container-type: inline;
+  container-name: x;
+}
+@container x (max-width : 10000px) {
+  .message {
+    background-color: rebeccapurple;
+  }
 }
 
 /* Bubble for sender */
