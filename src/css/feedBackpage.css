@@ -294,6 +294,7 @@ img {
   font-size: 16px;
   text-shadow: 0 0 5px rgb(186, 109, 109);
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 .next-btn:hover {

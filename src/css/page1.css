@@ -90,6 +90,7 @@
   font-weight: bold;
   font-size: 16px;
   text-shadow: 0 0 5px rgb(186, 109, 109);
+  cursor: pointer;
 }
 
 .next-btn:hover {
@@ -101,8 +102,4 @@
   margin-top: 2px;
   margin-left: 2px;
   margin-bottom: -2px;
-}
-.back-img {
-  width: 29px;
-  rotate: 180deg;
 }

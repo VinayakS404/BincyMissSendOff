@@ -45,6 +45,7 @@
   overflow: hidden;
   position: relative;
   z-index: 100;
+  cursor: pointer;
 
   animation: appear linear;
   animation-timeline: view();
@@ -88,6 +89,7 @@
   overflow: hidden;
   position: relative;
   z-index: 100;
+  cursor: pointer;
 
   animation: appearo linear;
   animation-timeline: view();
