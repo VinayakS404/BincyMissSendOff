@@ -83,4 +83,9 @@ btnElement.addEventListener("click", () => {
 
     submitMessage();
   }, 4000);
+  setTimeout(() => {
+    window.location.href = "lastPage.html";
+
+    submitMessage();
+  }, 8000);
 });

@@ -25,7 +25,7 @@ function startProfessionalTyping(text, container) {
   const baseSpeed = 0.06;
   let cumulativeDelay = 0;
 
-  text.split("").forEach((char) => {
+  Array.from(text).forEach((char) => {
     const span = document.createElement("span");
     span.textContent = char === " " ? "\u00A0" : char;
 
