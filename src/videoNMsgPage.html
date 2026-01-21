@@ -14,35 +14,6 @@
 
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/videoNMsgPage.css" />
-    <style>
-      #messages {
-        max-width: 500px;
-        margin: 20px auto;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        font-family: Arial, sans-serif;
-      }
-
-      .message-bubble {
-        background-color: #f0c27b;
-        padding: 10px 15px;
-        border-radius: 15px;
-        max-width: 80%;
-        word-wrap: break-word;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        opacity: 0;
-        transform: translateY(10px);
-        animation: fadeInUp 0.5s forwards;
-      }
-
-      @keyframes fadeInUp {
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    </style>
   </head>
   <body>
     <div class="first-div x-div">
@@ -62,34 +33,20 @@
         ></video>
       </div>
       <div class="review-div x-div">
-        <textarea class="emoji" id="messageInput"></textarea>
-        <button class="hi">dasa</button>
+        <p class="name-1st-p x1-p">Leave a Message for Us</p>
+        <p class="des-1st-p x2-p">
+          Dear Bincy Miss, we would love to have a short message from you for
+          our class memory. Your words will be a cherished memory for us!
+        </p>
+        <textarea class="emoji-text" id="messageInput"></textarea>
+        <button class="plane-btn" onclick="submitMessage()">
+          <img src="../assets/images/paper-plane.png" class="plane-img" />
+          Send the Plane
+        </button>
         <div id="messages"></div>
-
-        <button onclick="submitMessage()">Send</button>
       </div>
     </div>
-    <script>
-      function submitMessage() {
-        const input = document.getElementById("messageInput");
-        const message = input.value.trim();
-        if (!message) return;
-        input.value = "";
 
-        const messageDiv = document.createElement("div");
-        document.getElementById("messages").appendChild(messageDiv);
-
-        let i = 0;
-        function type() {
-          if (i < message.length) {
-            messageDiv.textContent += message[i];
-            i++;
-            setTimeout(type, 50); // typing speed
-          }
-        }
-        type();
-      }
-    </script>
     <script src="./js/videoNMsgPage.js"></script>
     <script src="./js/emojis.js"></script>
   </body>

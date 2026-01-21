@@ -5,7 +5,3 @@ $(document).ready(() => {
     autocomplete: true,
   });
 });
-
-document.querySelector(".hi").addEventListener("clck", () => {
-  console.log("hi");
-});
