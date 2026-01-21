@@ -154,17 +154,20 @@
   transition: transform 0.3s ease;
 }
 
-.photo-img:hover {
+.ppe:hover .photo-img,
+.ppe .img-des-p:hover ~ .photo-img,
+.ppo:hover .photo-img,
+.ppo .img-des-p:hover ~ .photo-img {
   transform: scale(1.05);
 }
 .img-des-p {
-  position: fixed;
+  position: absolute;
   color: white;
   font-size: 30px;
   text-align: center;
   left: 0;
   right: 0;
-  bottom: -30;
+  bottom: -70;
   transition: all 0.5s ease-in-out;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
   z-index: 300;
