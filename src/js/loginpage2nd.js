@@ -4,8 +4,8 @@ const btnElement = document.querySelector(".Sigin-2nd-btn-js");
 const userDivElement = document.querySelector(".user-div-js");
 const passDivElement = document.querySelector(".pass-div-js");
 
-const correctUsername = "a"; //BCA_2024_28
-const correctPassword = "s"; //bincy2026
+const correctUsername = "BCA_2024_28"; //BCA_2024_28
+const correctPassword = "bincy2026"; //bincy2026
 
 btnElement.addEventListener("click", () => {
   const enteredUsername = usernameElement.value;
