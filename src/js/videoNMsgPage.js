@@ -39,25 +39,20 @@ function submitMessage() {
     return;
   }
 
-  // 1. Get data from localStorage
   let storedData = localStorage.getItem("messages");
   let messages = [];
 
   try {
-    // 2. Parse it and ensure it is actually an Array
     const parsedData = JSON.parse(storedData);
     messages = Array.isArray(parsedData) ? parsedData : [];
   } catch (e) {
-    // If JSON is corrupted, default to empty array
     messages = [];
   }
 
-  // 3. Now .push() will work safely
   messages.push(message);
 
   localStorage.setItem("messages", JSON.stringify(messages));
 
-  // Clear the emoji area (if using emojionearea)
   if ($("#messageInput").data("emojioneArea")) {
     $("#messageInput").data("emojioneArea").setText("");
   }
