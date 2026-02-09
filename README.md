@@ -14,4 +14,3 @@ The website includes:
 - **HTML5** – Page structure and content.
 - **CSS3** – Styling, animations, and responsive layout.
 - **JavaScript (ES6)** – Interactive features and dynamic behavior.
-- 
