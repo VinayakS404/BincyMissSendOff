@@ -8,9 +8,3 @@ The website includes:
 - 📹 **Video Section** – Farewell clips to cherish the memories.
 - 💌 **Teacher’s Message** – A special section where the teacher can leave a personal message.
 - ✨ **Interactive Features** – Smooth animations, hover effects, and dynamic content.
-
-## 💻 Technologies Used
-
-- **HTML5** – Page structure and content.
-- **CSS3** – Styling, animations, and responsive layout.
-- **JavaScript (ES6)** – Interactive features and dynamic behavior.
