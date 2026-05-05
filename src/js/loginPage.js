@@ -21,7 +21,7 @@ back2ndElement.addEventListener("click", () => {
 });
 
 forgotElement.addEventListener("click", () => {
-  alert("Password Hint\nYour full name + Current year\n(No spaces!)");
+  alert("Password Hint\nYour name + Current year\n(No spaces!)");
 });
 
 eyeElement.addEventListener("click", () => {
